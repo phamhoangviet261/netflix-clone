@@ -4,12 +4,12 @@ import "firebase/auth";
 import { seedDatabase } from "../seed";
 
 const config = {
-  apiKey: "AIzaSyA-IkbtOlFtfH2XXeQQSsDeEisiJtrtRkM",
-  authDomain: "netflix-851a4.firebaseapp.com",
-  projectId: "netflix-851a4",
-  storageBucket: "netflix-851a4.appspot.com",
-  messagingSenderId: "207128207213",
-  appId: "1:207128207213:web:fba48092161920ecff4464",
+  apiKey: "AIzaSyBhqSn0sjusa-rcM3HFiSn4pfGdh4QkjZE",
+    authDomain: "netflix-1-ddf8c.firebaseapp.com",
+    projectId: "netflix-1-ddf8c",
+    storageBucket: "netflix-1-ddf8c.appspot.com",
+    messagingSenderId: "651917972464",
+    appId: "1:651917972464:web:db0497aad4d2f9eb4d4335"
 };
 
 const firebase = Firebase.initializeApp(config);
