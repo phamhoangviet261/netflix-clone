@@ -1,22 +1,28 @@
 import React from "react";
-import { Rpute, Redirect, Route } from "react-router-dom";
-export function IsUserRedirect({ user, loggedInPath, children, ...restProps }) {
+import { Route, Redirect } from "react-router-dom";
+
+export function IsUserRedirect({ user, loggedInPath, children, ...rest }) {
   return (
     <Route
-      {...restProps}
+      {...rest}
       render={() => {
-        if (!user) return children;
-        if (user)
+        if (!user) {
+          return children;
+        }
+
+        if (user) {
           return (
             <Redirect
-              to="{{
-            pathName: loggedInPath
-        }}"
-            ></Redirect>
+              to={{
+                pathname: loggedInPath,
+              }}
+            />
           );
+        }
+
         return null;
       }}
-    ></Route>
+    />
   );
 }
 
